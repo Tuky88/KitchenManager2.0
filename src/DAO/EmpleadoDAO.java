@@ -22,7 +22,7 @@ private ResultSet rs;
 
      public EmpleadoDAO()
      {
-          super(new Conection(),"root","root","BullTruckOO");         
+          super(new Conection(),"root","root","km");         
      }
 
     /**

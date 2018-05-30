@@ -21,7 +21,7 @@ public class ComprasDAO extends ConsultaDAO
 
     public ComprasDAO() 
     {
-     super(new Conection(),"root","root","BullTruckOO");
+     super(new Conection(),"root","root","km");
     }
     public void RegistrarCompra(String id,String nombre,double precio,String fecha,String Nombre)
     {

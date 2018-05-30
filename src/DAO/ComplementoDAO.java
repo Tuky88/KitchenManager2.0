@@ -21,7 +21,7 @@ public class ComplementoDAO extends ConsultaDAO
 
     public ComplementoDAO() 
     {
-        super(new Conection(),"root","root","BullTruckOO");
+        super(new Conection(),"root","root","km");
     }
     //Agregar
     @Override

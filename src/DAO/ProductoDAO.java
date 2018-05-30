@@ -25,7 +25,7 @@ public class ProductoDAO extends ConsultaDAO
      public ProductoDAO()
      {
        
-          super(new Conection(),"root","root","BullTruckOO");
+          super(new Conection(),"root","root","km");
           
      }
 public String getTipo() {

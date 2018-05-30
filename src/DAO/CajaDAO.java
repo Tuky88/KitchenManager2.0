@@ -24,7 +24,7 @@ private Conection database;
 public CajaDAO()
 {
     user="root";
-          datab="BullTruckOO";
+          datab="km";
           contraseña="root";
     database=new Conection();
 }

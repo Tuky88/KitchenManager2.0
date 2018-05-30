@@ -24,7 +24,7 @@ public class VentasDAO {
      {
          database= new Conection();
           user="root";
-          datab="BullTruckOO";
+          datab="km";
           contraseña="root";
      }
      public void RegistrarVenta(double valor)

@@ -25,7 +25,7 @@ public class TicketDAO {
      {
          database= new Conection();
           user="root";
-          datab="BullTruckOO";
+          datab="km";
           contraseña="root";
      }
      
