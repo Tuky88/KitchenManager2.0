@@ -40,15 +40,15 @@ public class Contenedor extends javax.swing.JFrame {
              } catch (UnsupportedLookAndFeelException ex) {
                  Logger.getLogger(Contenedor.class.getName()).log(Level.SEVERE, null, ex);
              }
-  setTitle("Bull Truck System ");
+  setTitle("KITCHEN MANAGER SYSTEM ");
     
         setIconImage(new ImageIcon(getClass().getResource("/imagenes/logo.png")).getImage());
-        ((JPanel)getContentPane()).setOpaque(false);
-        ImageIcon uno=new ImageIcon(this.getClass().getResource("/imagenes/loguin_2.png"));
-        JLabel fondo= new JLabel();
-        fondo.setIcon(uno);
-        getLayeredPane().add(fondo,JLayeredPane.FRAME_CONTENT_LAYER);
-        fondo.setBounds(0,0,uno.getIconWidth(),uno.getIconHeight());
+//        ((JPanel)getContentPane()).setOpaque(false);
+//        ImageIcon uno=new ImageIcon(this.getClass().getResource("/imagenes/loguin_2.png"));
+//        JLabel fondo= new JLabel();
+//        fondo.setIcon(uno);
+//        getLayeredPane().add(fondo,JLayeredPane.FRAME_CONTENT_LAYER);
+//        fondo.setBounds(0,0,uno.getIconWidth(),uno.getIconHeight());
          menu=new JTabbedPane();
          mesa1= new Ventana();
          mesa2= new Ventana();
@@ -57,7 +57,7 @@ public class Contenedor extends javax.swing.JFrame {
          mesa5= new Ventana();
          out1= new Ventana();
          out2= new Ventana();
-        admin=new Admin();
+        admin=new Admin();  
         admin.setVisible(false);
         menu.addTab("Mesa 1",mesa1);
         menu.addTab("Mesa 2",mesa2);
@@ -90,6 +90,7 @@ public class Contenedor extends javax.swing.JFrame {
     private void initComponents() {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(153, 204, 255));
         setResizable(false);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
