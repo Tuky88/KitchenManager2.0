@@ -35,11 +35,11 @@ public class Contenedor extends javax.swing.JFrame {
     public ControladorVenta cv6;
     public ControladorVenta cv7;
     public Contenedor() throws ClassNotFoundException, InstantiationException, IllegalAccessException {
-//      try {
-//                 UIManager.setLookAndFeel("UpperEssential.UpperEssentialLookAndFeel");
-//             } catch (UnsupportedLookAndFeelException ex) {
-//                 Logger.getLogger(Contenedor.class.getName()).log(Level.SEVERE, null, ex);
-//             }
+      try {
+                 UIManager.setLookAndFeel("UpperEssential.UpperEssentialLookAndFeel");
+             } catch (UnsupportedLookAndFeelException ex) {
+                 Logger.getLogger(Contenedor.class.getName()).log(Level.SEVERE, null, ex);
+             }
   setTitle("Bull Truck System ");
     
         setIconImage(new ImageIcon(getClass().getResource("/imagenes/logo.png")).getImage());

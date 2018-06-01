@@ -73,7 +73,7 @@ public class Ticket{
     {
        
     
-     String ruta ="C:\\Users\\Axel Reyez\\Desktop\\Ticket.txt";
+     String ruta ="C:\\KitchenManager2.0\\src\\Generados\\Ticket\\Ticket.txt";
         File archivo = new File(ruta);
         BufferedWriter bw = null;
         try {
@@ -81,9 +81,9 @@ public class Ticket{
         } catch (IOException ex) {
             Logger.getLogger(Ticket.class.getName()).log(Level.SEVERE, null, ex);
         }
-            bw.write("Bull Truck\n");
+            bw.write("Kitchen Manager S.H.\n");
             bw.write("\t\t"+dia);
-            bw.write("\n\t"+hora);
+            bw.write("\n\t\t"+hora);
             bw.write("\n");
             while(!crea.isEmpty())
             {

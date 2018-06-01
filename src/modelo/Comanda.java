@@ -45,7 +45,7 @@ public class Comanda {
     public void imprimirComanda()
     {
         try {
-            String ruta="C:\\Users\\Axel Reyez\\Desktop\\Comanda.txt";
+            String ruta="C:\\KitchenManager2.0\\src\\Generados\\Comanda\\Comanda.txt";
             File archivo = new File(ruta);
             BufferedWriter bw=null;
             bw = new BufferedWriter(new FileWriter(archivo));

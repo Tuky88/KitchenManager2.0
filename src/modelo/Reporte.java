@@ -29,7 +29,7 @@ public class Reporte{
     private String dia;
     private String hora;
     private String Gerente;
-    private String cadena="C:\\Users\\Axel Reyez\\Desktop\\";
+    private String cadena="C:\\KitchenManager2.0\\src\\Generados\\Reporte\\";
 
     public Reporte(String dia, String hora, String Gerente) {
         this.dia = dia;
@@ -179,8 +179,8 @@ documento.close();
             }
         
         documento.open();
-        boolean add = documento.add(new Paragraph("Bull Truck System\n ",FontFactory.getFont("arial",30)));
-        Paragraph parrafo2 = new Paragraph("Reporte de ventas"+ " \nGenerado : "+dia +"\nA las:"+ hora+"\n",FontFactory.getFont("arial",30));
+        boolean add = documento.add(new Paragraph("Kitchen Manager System\n ",FontFactory.getFont("arial",20)));
+        Paragraph parrafo2 = new Paragraph("Reporte de ventas"+ " \nGenerado : "+dia +"\nA las:"+ hora+"\n",FontFactory.getFont("arial",24));
         documento.add(new Paragraph("\nGenerado por:"+Gerente,FontFactory.getFont("arial",24)));
         parrafo2.setAlignment(1);
         documento.add(parrafo2);
@@ -217,11 +217,12 @@ documento.close();
                 }
                 genera.setAcumulado(total);
                 genera.setCajaFinal();
-                documento.add(new Paragraph("\nCaja inicial:$ "+genera.getCajaInicial(),FontFactory.getFont("arial",24)));
-                documento.add(new Paragraph("\nVentas totales:$ "+genera.getAcumulado(),FontFactory.getFont("arial",24)));
-                documento.add(new Paragraph("\nCaja final$ "+genera.getCajaFinal(),FontFactory.getFont("arial",24)));
+                documento.add(new Paragraph("\n\nCaja inicial:$ "+genera.getCajaInicial(),FontFactory.getFont("arial",22)));
+                documento.add(new Paragraph("\n\nVentas totales:$ "+genera.getAcumulado(),FontFactory.getFont("arial",22)));
+                documento.add(new Paragraph("\n\nCaja final$ "+genera.getCajaFinal(),FontFactory.getFont("arial",22)));
                 documento.add(tabla);  
                 this.genera.CorteCaja();
+                documento.close();
      }
     
 }
