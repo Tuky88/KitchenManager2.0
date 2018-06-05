@@ -6,6 +6,7 @@
 package modelo;
 
 import DAO.CajaDAO;
+import DAO.PagoDAO;
 import DAO.ProductoDAO;
 import DAO.TicketDAO;
 import DAO.VentasDAO;
@@ -104,9 +105,12 @@ public class CajaRegistradora  {
         TicketDAO tic=new TicketDAO();
             VentasDAO ven=new VentasDAO();
             ProductoDAO prod=new ProductoDAO();
+            PagoDAO pag=new PagoDAO();
             tic.ReiniciarConteo();
             ven.ReiniciarCuenta();
             prod.ReiniciarVentas();
+            pag.ReiniciarConteoE();
+            pag.ReiniciarConteoT();
     }
     public void registrarVenta()
     {

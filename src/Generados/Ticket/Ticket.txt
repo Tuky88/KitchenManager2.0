@@ -1,13 +1,11 @@
 Kitchen Manager S.H.
-		1 de junio de 2018
-		10:28:08
+		5 de junio de 2018
+		11:45:44
 
-Corral-Arrachera-1/2-Ajo-Ensalada	$70.0
-Corral-Arrachera-1/2-Ajo-Ensalada	$70.0
-Corral-Arrachera-1/2-Ajo-Ensalada	$70.0
+Corral-Arrachera-3/4-Ajo-Ensalada	$70.0
 
-Total:	210.0
-Pago:	220.0
-Cambio:	10.0
+Total:	70.0
+Pago:	100.0
+Cambio:	30.0
 
 GRACIAS POR SU PREFERENCIA

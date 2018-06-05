@@ -1,5 +1,3 @@
 
 -
-numero de pedido:1Corral-Arrachera-1/2-Ajo-Ensalada
-Corral-Arrachera-1/2-Ajo-Ensalada
-Corral-Arrachera-1/2-Ajo-Ensalada
+numero de pedido:3Corral-Arrachera-3/4-Ajo-Ensalada

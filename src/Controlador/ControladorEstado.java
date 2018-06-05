@@ -5,6 +5,7 @@
  */
 package Controlador;
 
+import DAO.PagoDAO;
 import DAO.ProductoDAO;
 import DAO.TicketDAO;
 import DAO.VentasDAO;
@@ -60,8 +61,11 @@ public class ControladorEstado {
             }
             TicketDAO tic=new TicketDAO();
             VentasDAO ven=new VentasDAO();
+            PagoDAO pag=new PagoDAO();
             estado.ticket.setText(Integer.toString(tic.getNumero()));
             estado.ventas.setText(Double.toString(ven.getVentas()));
+           estado.EfectivoTxt.setText(""+pag.getNumeroE());
+           estado.TerminalTxt.setText(""+pag.getNumeroT());
             
             
             

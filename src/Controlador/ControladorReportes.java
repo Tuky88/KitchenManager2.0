@@ -45,7 +45,7 @@ public class ControladorReportes {
          reporte.idtext.setText("");
          reporte.nombretext.setText("");
          reporte.resultadospinner.setText("");
-         reporte.spinneraño.setValue((Object)15);
+         reporte.spinneraño.setValue((Object)18);
          reporte.spinnerdia.setValue((Object)1);
          reporte.spinnermes.setValue((Object)1);
         }

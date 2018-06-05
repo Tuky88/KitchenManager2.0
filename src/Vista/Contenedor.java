@@ -8,6 +8,7 @@ package Vista;
 import javax.swing.JMenuBar;
 import javax.swing.JTabbedPane;
 import Controlador.*;
+import UpperEssential.UpperEssentialLookAndFeel;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.ImageIcon;
@@ -35,48 +36,48 @@ public class Contenedor extends javax.swing.JFrame {
     public ControladorVenta cv6;
     public ControladorVenta cv7;
     public Contenedor() throws ClassNotFoundException, InstantiationException, IllegalAccessException {
-      try {
-                 UIManager.setLookAndFeel("UpperEssential.UpperEssentialLookAndFeel");
-             } catch (UnsupportedLookAndFeelException ex) {
-                 Logger.getLogger(Contenedor.class.getName()).log(Level.SEVERE, null, ex);
-             }
-  setTitle("KITCHEN MANAGER SYSTEM ");
-    
-        setIconImage(new ImageIcon(getClass().getResource("/imagenes/logo.png")).getImage());
+        try {
+            UIManager.setLookAndFeel(new UpperEssentialLookAndFeel("C:\\KitchenManager2.0\\km.theme"));
+            setTitle("KITCHEN MANAGER SYSTEM ");
+            
+            setIconImage(new ImageIcon(getClass().getResource("/imagenes/logo.png")).getImage());
 //        ((JPanel)getContentPane()).setOpaque(false);
 //        ImageIcon uno=new ImageIcon(this.getClass().getResource("/imagenes/loguin_2.png"));
 //        JLabel fondo= new JLabel();
 //        fondo.setIcon(uno);
 //        getLayeredPane().add(fondo,JLayeredPane.FRAME_CONTENT_LAYER);
 //        fondo.setBounds(0,0,uno.getIconWidth(),uno.getIconHeight());
-         menu=new JTabbedPane();
-         mesa1= new Ventana();
-         mesa2= new Ventana();
-         mesa3= new Ventana();
-         mesa4= new Ventana();
-         mesa5= new Ventana();
-         out1= new Ventana();
-         out2= new Ventana();
-        admin=new Admin();  
-        admin.setVisible(false);
-        menu.addTab("Mesa 1",mesa1);
-        menu.addTab("Mesa 2",mesa2);
-        menu.addTab("Mesa 3",mesa3);
-        menu.addTab("Mesa 4",mesa4);
-        menu.addTab("Mesa 5",mesa5);
-        menu.addTab("OUT 1",out1);
-        menu.addTab("OUT 2",out2);
-        menu.addTab("ADMINISTRADOR",admin);
-        this.add(menu);
-        //controladores
-         cv1=new ControladorVenta(mesa1);
-         cv2=new ControladorVenta(mesa2);
-         cv3=new ControladorVenta(mesa3);
-         cv4=new ControladorVenta(mesa4);
-         cv5=new ControladorVenta(mesa5);
-         cv6=new ControladorVenta(out1);
-         cv7=new ControladorVenta(out2);
-        this.pack();
+menu=new JTabbedPane();
+mesa1= new Ventana();
+mesa2= new Ventana();
+mesa3= new Ventana();
+mesa4= new Ventana();
+mesa5= new Ventana();
+out1= new Ventana();
+out2= new Ventana();
+admin=new Admin();
+admin.setVisible(false);
+menu.addTab("Mesa 1",mesa1);
+menu.addTab("Mesa 2",mesa2);
+menu.addTab("Mesa 3",mesa3);
+menu.addTab("Mesa 4",mesa4);
+menu.addTab("Mesa 5",mesa5);
+menu.addTab("OUT 1",out1);
+menu.addTab("OUT 2",out2);
+menu.addTab("ADMINISTRADOR",admin);
+this.add(menu);
+//controladores
+cv1=new ControladorVenta(mesa1);
+cv2=new ControladorVenta(mesa2);
+cv3=new ControladorVenta(mesa3);
+cv4=new ControladorVenta(mesa4);
+cv5=new ControladorVenta(mesa5);
+cv6=new ControladorVenta(out1);
+cv7=new ControladorVenta(out2);
+this.pack();
+        } catch (UnsupportedLookAndFeelException ex) {
+            Logger.getLogger(Contenedor.class.getName()).log(Level.SEVERE, null, ex);
+        }
         
     }
 

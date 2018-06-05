@@ -7,6 +7,7 @@ package Controlador;
 
 import DAO.ComplementoDAO;
 import DAO.ConsultaDAO;
+import DAO.PagoDAO;
 import DAO.ProductoDAO;
 import Vista.Ventana;
 import java.awt.Color;
@@ -209,6 +210,11 @@ public class ControladorVenta {
                     CajaRegistradora caja=new CajaRegistradora(user.getTicket());
                     caja.ActualizarVentas(total);
                     caja.ActualizarTicket();
+                    PagoDAO pd=new PagoDAO();
+                    if(ventana.rbtnEfe.isSelected())
+                        pd.AumentarE(total);
+                    else
+                        pd.AumentarT(total);
                     ventana.ComandaT.setText(Integer.toString(caja.getTicket()));
                     JOptionPane.showMessageDialog(ventana,"Su cambio es de:$"+cambio);
                     

@@ -62,6 +62,10 @@ fecha.setText(df2.format(Fecha));
         Ventas = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         GerenteT = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        EfectivoTxt = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
+        TerminalTxt = new javax.swing.JTextField();
 
         fecha.setFont(new java.awt.Font("Tekton Pro", 0, 18)); // NOI18N
         fecha.setText("FECHA");
@@ -108,6 +112,26 @@ fecha.setText(df2.format(Fecha));
 
         GerenteT.setFont(new java.awt.Font("Tekton Pro", 0, 18)); // NOI18N
 
+        jLabel6.setFont(new java.awt.Font("Tekton Pro", 0, 18)); // NOI18N
+        jLabel6.setText("Efectivo");
+
+        EfectivoTxt.setFont(new java.awt.Font("Tekton Pro", 0, 18)); // NOI18N
+        EfectivoTxt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                EfectivoTxtActionPerformed(evt);
+            }
+        });
+
+        jLabel7.setFont(new java.awt.Font("Tekton Pro", 0, 18)); // NOI18N
+        jLabel7.setText("Terminal");
+
+        TerminalTxt.setFont(new java.awt.Font("Tekton Pro", 0, 18)); // NOI18N
+        TerminalTxt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TerminalTxtActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -123,7 +147,15 @@ fecha.setText(df2.format(Fecha));
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(fecha)
                                     .addComponent(hora))
-                                .addGap(605, 605, 605)
+                                .addGap(252, 252, 252)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel7)
+                                    .addComponent(jLabel6))
+                                .addGap(65, 65, 65)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(EfectivoTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 124, Short.MAX_VALUE)
+                                    .addComponent(TerminalTxt))
+                                .addGap(94, 94, 94)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel3)
                                     .addComponent(jLabel4)
@@ -141,15 +173,23 @@ fecha.setText(df2.format(Fecha));
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(45, 45, 45)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(fecha)
-                    .addComponent(jLabel3)
-                    .addComponent(ticket, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel6)
+                        .addComponent(EfectivoTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(fecha)
+                        .addComponent(jLabel3)
+                        .addComponent(ticket, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(hora)
-                    .addComponent(jLabel4)
-                    .addComponent(ventas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel7)
+                        .addComponent(TerminalTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(hora)
+                        .addComponent(jLabel4)
+                        .addComponent(ventas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(34, 34, 34)
@@ -171,16 +211,28 @@ fecha.setText(df2.format(Fecha));
         // TODO add your handling code here:
     }//GEN-LAST:event_ticketActionPerformed
 
+    private void EfectivoTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EfectivoTxtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_EfectivoTxtActionPerformed
+
+    private void TerminalTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TerminalTxtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TerminalTxtActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton Corte;
+    public javax.swing.JTextField EfectivoTxt;
     public javax.swing.JTextField GerenteT;
+    public javax.swing.JTextField TerminalTxt;
     public javax.swing.JButton Ventas;
     public javax.swing.JLabel fecha;
     public javax.swing.JLabel hora;
     public javax.swing.JLabel jLabel3;
     public javax.swing.JLabel jLabel4;
     public javax.swing.JLabel jLabel5;
+    public javax.swing.JLabel jLabel6;
+    public javax.swing.JLabel jLabel7;
     private javax.swing.JScrollPane jScrollPane1;
     public javax.swing.JTable tabla;
     public javax.swing.JTextField ticket;
